@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	background-color: #ecf0f3;
+	outline: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.calculator {
+	width: 400px;
+	height: 580px;
+	background-color: #4c504c;
+	padding: 15px;
+	border-radius: 15px;
+	box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgba(0, 0, 0, 0.50);
+}
+#result {
+	height: 110px;
+	width: 100%;
+	margin: auto;
+}
+#history {
+	position: relative;
+	height: 40px;
+	color: #0e0d0d;
+	text-align: right;
+	margin: 0 20px;
+	padding-top: 20px;
+}
+
+#output {
+	height: 60px;
+	color: #100d0d;
+	text-align: right;
+	margin: 10px 20px;
+	font-size: 1.6rem;
+}
+
+#keyboard {
+	border-top: 3px solid #ecdd08;
+	height: 400px;
+}
+#keyboard #clear {
+	background-color: #e47070;
+}
+#keyboard #backspace {
+	background-color: #d0d080;
+}
+.operator,
+.number,
+.empty {
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	border-radius: 50%;
+	border-width: 0;
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+}
+#keyboard .operator,
+#keyboard .number {
+	cursor: pointer;
+}
+#keyboard .operator:active,
+#keyboard .number:active {
+	font-size: 15px;
+}
+#keyboard .operator:focus,
+#keyboard .number:focus,
+#keyboard .empty:focus {
+	outline: 0;
+}
+.number {
+	background-color: #d3d3d1;
+}
+.operator {
+	background-color: #cfb9ac;
+}
